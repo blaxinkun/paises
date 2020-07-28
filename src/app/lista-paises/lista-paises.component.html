@@ -1,0 +1,27 @@
+<h1>Listado de Paises</h1>
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">idioma</th>
+        <th scope="col">moneda</th>
+        <th scope="col">poblacion</th>
+        <th scope="col">capital</th>
+     
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of paises">
+        <td>{{item.nombre}}</td>
+        <td>{{item.idioma}}</td>
+        <td>{{item.moneda}}</td>
+        <td>{{item.poblacion}}</td>
+        
+        <td>{{item.capital}}</td>
+       
+      </tr>
+    </tbody>
+  </table>
+  <h4>{{paises.length}} paises</h4>
+</div>

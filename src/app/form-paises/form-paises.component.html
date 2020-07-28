@@ -1,0 +1,46 @@
+
+
+
+<div class="container">
+    <h1>Añadir Paises</h1>
+
+    <form [formGroup]="elFormulario" (ngSubmit)="guardar(elFormulario.value)">
+        <div class="row">
+            <div class="field-element ">
+                <label>Nombre del pais</label>
+                <input type="text" formControlName="nombre">
+                
+            </div>
+
+            <div class="field-element ">
+                <label>Idioma</label>
+                <input type="text" formControlName="idioma">
+                
+                   
+                
+            </div>
+
+            <div class="field-element ">
+                <label>Moneda</label>
+                <input type="text" formControlName="moneda">
+            </div>
+
+            <div class="field-element ">
+                <label>Poblacion</label>
+                <input type="number" formControlName="poblacion">
+            </div>
+
+            
+            <div class="field-element ">
+                <label>Capital</label>
+                <input type="text" formControlName="capital">
+            </div>
+
+        </div>
+        
+        <div class="row-reverse">
+            <button class="btn primary" type="submit" [disabled]="!elFormulario.valid">Guardar</button>
+         
+        </div>
+    </form>
+</div>
